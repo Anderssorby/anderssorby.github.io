@@ -1,11 +1,11 @@
 ---
 layout: default
-title:  "My master thesis on GAN"
+title:  "See my project thesis"
 date:   2019-05-23 13:42:04 +0900
 categories: research thesis
 ---
 
-# Master thesis on GAN
+# Project thesis
 
 Currently I'm writing my master thesis on Generative Adversarial Networks. This is a exciting technology that has been pushing the boundaries of AI and of what is conceived possible.
 
