@@ -30,6 +30,15 @@
           <span class="ribbon-inner">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+            <nav>
+              <h2>
+              {% for item in site.data.navigation %}
+              <a href="{{ item.link }}" {% if page.url == item.link %}style="text-decoration: underline;"{% endif %}>
+                  {{ item.name }}
+                  </a>
+              {% endfor %}
+              </h2>
+            </nav>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -49,9 +58,10 @@
         </div>
       {% endif %}
 
-
       <span class="banner-fix"></span>
 
+        <section id="navigation">
+        </section>
 
       <section id="main_content">
         {{ content }}
