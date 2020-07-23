@@ -1,0 +1,49 @@
+---
+title: Welcome to my homepage
+---
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('$baseurl$/static/img/sky.jpg')" alt="" title="">
+    <div class="container head">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <!--<div class="hero-block">-->
+                    <!--    <img class="img-circle portfolio-link" src="$baseurl$/static/img/face.png" href="#portfolioModal1" data-toggle="modal" width="150" height="150" alt="" title="">-->
+                    <!--</div>-->
+                    <h1 id="top-title-font-weight-bold">$title$</h1>
+                    <!--    <hr class="small"> -->
+                    <span class="subheading" id="textfloat">
+                        $site_description$
+                        <div>
+                            <i class="fa fa-chevron-down" id="scroll-down"></i>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container front-end">
+    <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                        $index_text$
+
+                        <h2>Posts</h2>
+                        $partial("templates/post-list.html")$
+
+                        <p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<hr>
+
