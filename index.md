@@ -11,6 +11,7 @@ This might someday be full of interesting posts about various topics. See my [CV
  * Machine learning and Data Science in general
  * Programming and thereunder Functional Programming
  * Mathematics which includes things like Category Theory, Topology, Statistics and generally anything logically structured.
+ * Physics - the fudamental nature of nature
  * Philosophy - what should we do and are we doing the right thing? What does really make sense?
  * Using knowledge to make the world a better place for everyone.
 
