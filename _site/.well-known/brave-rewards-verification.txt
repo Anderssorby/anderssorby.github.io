@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sorby.xyz
+Token: 42a42f90f96a6a573a6a2d731e0bdd0b4022e5b39b9bc80cf50fbe8afa6445c3
