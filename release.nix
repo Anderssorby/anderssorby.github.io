@@ -14,17 +14,17 @@ let
       hakyll =
         pipe
            hpOld.hakyll
-           [ (flip appendPatch ./hakyll.patch)
+           [ # (flip appendPatch ./hakyll.patch)
              (flip appendConfigureFlags [ "-f" "watchServer" "-f" "previewServer" ])
            ];
 
-      hakyll-nix-example = hpNew.callCabal2nix "myblog" ./. { };
+      hakyll-project = hpNew.callCabal2nix "anderssorby-github-io" ./. {};
 
       niv = import sources.niv { };
     };
   };
 
-  project = haskellPackages.hakyll-nix-example;
+  project = haskellPackages.hakyll-project;
 in
 {
   project = project;

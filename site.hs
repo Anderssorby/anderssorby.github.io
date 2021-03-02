@@ -7,17 +7,13 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-  match "images/*" $ do
+  match ("images/*"
+         .||.  "files/*"
+         .||.  "static/*/*"
+         .||. ".well-known/*") $ do
     route idRoute
     compile copyFileCompiler
 
-  match "files/*" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  match "static/*/*" $ do
-    route idRoute
-    compile copyFileCompiler
 
   match (fromList ["about.md"]) $ do
     route $ setExtension "html"
@@ -78,8 +74,9 @@ siteCtx =
   constField "baseurl" ""
     `mappend` constField "site_description" "My homepage"
     `mappend` constField "twitter_username" "anders_sorby"
-    `mappend` constField "github_username"  "anderssorby"
-    `mappend` constField "header_img"       "sky.jpg"
+    `mappend` constField "github_username" "anderssorby"
+    `mappend` constField "mastodon_url"  "https://snabelen.no/@anderscs"
+    `mappend` constField "header_img"         "sky.jpg"
     `mappend` constField
                 "linkedin_url"
                 "https://www.linkedin.com/in/anders-christiansen-s%C3%B8rby/"
